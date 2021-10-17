@@ -1,0 +1,38 @@
+{
+	"version": "0.0.0",
+	"type": "module",
+	"module": "./src/main.js",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"serve": "vite preview",
+		"link-specta": "npm link @specta-app/core",
+		"postinstall": "npm run link-specta"
+	},
+	"devDependencies": {
+		"@sveltejs/vite-plugin-svelte": "^1.0.0-next.11",
+		"autoprefixer": "^10.2.6",
+		"cssnano": "^5.0.6",
+		"postcss": "^8.3.5",
+		"postcss-load-config": "^3.1.0",
+		"postcss-scss": "^4.0.0",
+		"sass": "^1.35.1",
+		"svelte": "^3.37.0",
+		"svelte-loading-spinners": "^0.1.6",
+		"svelte-preprocess": "^4.7.3",
+		"tailwindcss": "^2.2.4",
+		"vite": "^2.4.2"
+	},
+	"dependencies": {
+		"@fullcalendar/core": "^5.8.0",
+		"@fullcalendar/daygrid": "^5.8.0",
+		"@fullcalendar/list": "^5.8.0",
+		"@fullcalendar/timegrid": "^5.8.0",
+		"date-fns": "^2.22.1",
+		"firebase": "^9.0.0-beta.6",
+		"sherlockjs": "^1.4.0",
+		"svelte-routing": "^1.6.0",
+		"sveltestrap": "^5.4.0",
+		"uuid": "^8.3.2"
+	}
+}

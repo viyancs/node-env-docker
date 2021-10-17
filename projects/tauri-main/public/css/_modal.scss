@@ -1,0 +1,78 @@
+.modal-header {
+  border: none;
+  padding: 0;
+
+  h5 {
+    color: #454545;
+    font-size: 1.1rem;
+    margin: 0 0 15px 0;
+  }
+}
+
+.calendar-wrapper {
+  width: 80%;
+  display: flex;
+}
+
+.videocall-modal {
+  width: 529px;
+  .modal-content {
+    padding: 0;
+  }
+}
+
+.bottom-calendar-wrapper {
+  display: flex;
+  position: relative;
+  z-index: 99999;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 240px;
+  right: 220px;
+  padding: 10px 0;
+
+  .date-wrapper {
+    background: #fff;
+    left: 240px;
+    right: 220px;
+    width: 20%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+
+    h3 {
+      color: #454545;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    p {
+      margin: 4px 0 2px 0;
+      font-size: 0.875rem;
+      color: #a5a5a5;
+    }
+  }
+}
+
+.modal-checkbox {
+  float: left;
+  width: 50px !important;
+}
+
+.modal-label {
+  font-size: 1rem !important;
+  float: left;
+  padding-top: 1px;
+}
+
+.modal-event-title {
+  font-size: 1.25rem;
+  font-family: "proxima-nova-B";
+}
+
+.modal-invite-row {
+  justify-content: left;
+  align-items: left;
+  height: 80px;
+}

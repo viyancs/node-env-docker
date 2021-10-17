@@ -1,0 +1,8 @@
+/node_modules/
+/dist/
+/.vscode/
+/target/
+/WixTools/
+.DS_Store
+*.log
+.env

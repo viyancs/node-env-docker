@@ -1,0 +1,4089 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@specta/core",
+      "version": "0.1.0",
+      "type": "module",
+      "svelte": "./src/index.js",
+      "files": [
+        "dist"
+      ],
+      "main": "./src/index.js",
+      "module": "./src/index.js",
+      "exports": {
+        ".": {
+          "import": "./src/index.js",
+          "require": "./src/index.js"
+        },
+        "./auth": {
+          "import": "./src/auth/index.js",
+          "require": "./src/auth/index.js"
+        },
+        "./package.json": "./package.json"
+      },
+      "types": "./src/index.d.ts",
+      "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview",
+        "link-lib": "npm link"
+      },
+      "devDependencies": {
+        "@fullcalendar/core": "^5.8.0",
+        "@fullcalendar/daygrid": "^5.8.0",
+        "@fullcalendar/list": "^5.8.0",
+        "@fullcalendar/timegrid": "^5.8.0",
+        "@sveltejs/vite-plugin-svelte": "^1.0.0-next.11",
+        "date-fns": "^2.22.1",
+        "firebase": "^9.0.0-beta.6",
+        "sass": "^1.35.2",
+        "svelte": "^3.37.0",
+        "svelte-preprocess": "^4.7.4",
+        "sveltestrap": "^5.4.0",
+        "uuid": "^8.3.2",
+        "vite": "^2.4.2"
+      },
+      "dependencies": {
+        "sherlockjs": "^1.4.0",
+        "svelte-loading-spinners": "^0.1.7"
+      }
+    },
+    "prefix": "D:\\Projects\\upwork\\specta\\core"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "D:\\.pnpm-store\\v3",
+    "virtualStoreDir": "D:\\Projects\\upwork\\specta\\core\\node_modules\\.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "D:\\Projects\\upwork\\specta\\core",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/@fullcalendar%2Fcore failed, reason: read ECONNRESET",
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@fullcalendar%2Fcore"
+  },
+  "5 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/svelte failed, reason: read ECONNRESET",
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/svelte"
+  },
+  "6 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/date-fns failed, reason: read ECONNRESET",
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/date-fns"
+  },
+  "7 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/@sveltejs%2Fvite-plugin-svelte failed, reason: read ECONNRESET",
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@sveltejs%2Fvite-plugin-svelte"
+  },
+  "8 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/firebase failed, reason: read ECONNRESET",
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/firebase"
+  },
+  "9 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/sass failed, reason: read ECONNRESET",
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/sass"
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/uuid/8.3.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "uuid",
+      "rawSpec": "^8.3.2"
+    }
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/uuid/8.3.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "12 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/uuid/8.3.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "13 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@fullcalendar/daygrid/5.9.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@fullcalendar/daygrid",
+      "rawSpec": "^5.8.0"
+    }
+  },
+  "14 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@fullcalendar/daygrid/5.9.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "15 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@fullcalendar/daygrid/5.9.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/sherlockjs/1.4.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "sherlockjs",
+      "rawSpec": "^1.4.0"
+    }
+  },
+  "17 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sherlockjs/1.4.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "18 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sherlockjs/1.4.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "19 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@fullcalendar/list/5.9.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@fullcalendar/list",
+      "rawSpec": "^5.8.0"
+    }
+  },
+  "20 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@fullcalendar/list/5.9.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "21 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@fullcalendar/list/5.9.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-loading-spinners/0.1.7",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte-loading-spinners",
+      "rawSpec": "^0.1.7"
+    }
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-loading-spinners/0.1.7",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "24 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-loading-spinners/0.1.7",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "25 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@fullcalendar/timegrid/5.9.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@fullcalendar/timegrid",
+      "rawSpec": "^5.8.0"
+    }
+  },
+  "26 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@fullcalendar/timegrid/5.9.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "27 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@fullcalendar/timegrid/5.9.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "28 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-preprocess/4.8.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte-preprocess",
+      "rawSpec": "^4.7.4"
+    }
+  },
+  "29 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-preprocess/4.8.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "30 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-preprocess/4.8.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "31 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/sveltestrap/5.6.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "sveltestrap",
+      "rawSpec": "^5.4.0"
+    }
+  },
+  "32 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sveltestrap/5.6.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "33 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sveltestrap/5.6.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "34 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/vite/2.5.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vite",
+      "rawSpec": "^2.4.2"
+    }
+  },
+  "35 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vite/2.5.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "36 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vite/2.5.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "37 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@fullcalendar/core/5.9.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@fullcalendar/core",
+      "rawSpec": "^5.8.0"
+    }
+  },
+  "38 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@fullcalendar/core/5.9.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "39 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@fullcalendar/core/5.9.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "40 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@sveltejs/vite-plugin-svelte/1.0.0-next.19",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@sveltejs/vite-plugin-svelte",
+      "rawSpec": "^1.0.0-next.11"
+    }
+  },
+  "41 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@sveltejs/vite-plugin-svelte/1.0.0-next.19",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "42 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@sveltejs/vite-plugin-svelte/1.0.0-next.19",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "43 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/date-fns/2.23.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "date-fns",
+      "rawSpec": "^2.22.1"
+    }
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/date-fns/2.23.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "45 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/date-fns/2.23.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "46 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte/3.42.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte",
+      "rawSpec": "^3.37.0"
+    }
+  },
+  "47 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte/3.42.3",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "48 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/sass/1.38.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "sass",
+      "rawSpec": "^1.35.2"
+    }
+  },
+  "49 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sass/1.38.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "50 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte/3.42.3",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "51 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sass/1.38.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "52 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/firebase/9.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "firebase",
+      "rawSpec": "^9.0.0-beta.6"
+    }
+  },
+  "53 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "54 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@fullcalendar/daygrid/5.9.0",
+    "wanted": {
+      "dependentId": "/@fullcalendar/timegrid/5.9.0",
+      "name": "@fullcalendar/daygrid",
+      "rawSpec": "~5.9.0"
+    }
+  },
+  "55 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/tslib/2.3.1",
+    "wanted": {
+      "dependentId": "/@fullcalendar/daygrid/5.9.0",
+      "name": "tslib",
+      "rawSpec": "^2.1.0"
+    }
+  },
+  "56 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/tslib/2.3.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "57 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/tslib/2.3.1",
+    "wanted": {
+      "dependentId": "/@fullcalendar/list/5.9.0",
+      "name": "tslib",
+      "rawSpec": "^2.1.0"
+    }
+  },
+  "58 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/tslib/2.3.1",
+    "wanted": {
+      "dependentId": "/@fullcalendar/timegrid/5.9.0",
+      "name": "tslib",
+      "rawSpec": "^2.1.0"
+    }
+  },
+  "59 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/detect-indent/6.1.0",
+    "wanted": {
+      "dependentId": "/svelte-preprocess/4.8.0",
+      "name": "detect-indent",
+      "rawSpec": "^6.0.0"
+    }
+  },
+  "60 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/detect-indent/6.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "61 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/tslib/2.3.1",
+    "wanted": {
+      "dependentId": "/@fullcalendar/core/5.9.0",
+      "name": "tslib",
+      "rawSpec": "^2.1.0"
+    }
+  },
+  "62 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/strip-indent/3.0.0",
+    "wanted": {
+      "dependentId": "/svelte-preprocess/4.8.0",
+      "name": "strip-indent",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "63 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-indent/3.0.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "64 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/tslib/2.3.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "65 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/detect-indent/6.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "66 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/strip-indent/3.0.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "67 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/sass/1.16.1",
+    "wanted": {
+      "dependentId": "/svelte-preprocess/4.8.0",
+      "name": "@types/sass",
+      "rawSpec": "^1.16.0"
+    }
+  },
+  "68 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/sass/1.16.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "69 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/sass/1.16.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "70 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/pug/2.0.5",
+    "wanted": {
+      "dependentId": "/svelte-preprocess/4.8.0",
+      "name": "@types/pug",
+      "rawSpec": "^2.0.4"
+    }
+  },
+  "71 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/pug/2.0.5",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "72 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/pug/2.0.5",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "73 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/resolve/1.20.0",
+    "wanted": {
+      "dependentId": "/vite/2.5.1",
+      "name": "resolve",
+      "rawSpec": "^1.20.0"
+    }
+  },
+  "74 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve/1.20.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "75 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "size": 6027878,
+    "status": "started"
+  },
+  "76 debug pnpm:fetching-progress": {
+    "downloaded": 817,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "77 debug pnpm:fetching-progress": {
+    "downloaded": 2186,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "78 debug pnpm:fetching-progress": {
+    "downloaded": 3555,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "79 debug pnpm:fetching-progress": {
+    "downloaded": 4924,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "80 debug pnpm:fetching-progress": {
+    "downloaded": 6293,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "81 debug pnpm:fetching-progress": {
+    "downloaded": 7662,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "82 debug pnpm:fetching-progress": {
+    "downloaded": 9031,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "83 debug pnpm:fetching-progress": {
+    "downloaded": 10400,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "84 debug pnpm:fetching-progress": {
+    "downloaded": 11769,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "85 debug pnpm:fetching-progress": {
+    "downloaded": 13138,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "86 debug pnpm:fetching-progress": {
+    "downloaded": 14507,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "87 debug pnpm:fetching-progress": {
+    "downloaded": 15876,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "88 debug pnpm:fetching-progress": {
+    "downloaded": 17245,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "89 debug pnpm:fetching-progress": {
+    "downloaded": 18614,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "90 debug pnpm:fetching-progress": {
+    "downloaded": 19983,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "91 debug pnpm:fetching-progress": {
+    "downloaded": 21352,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "92 debug pnpm:fetching-progress": {
+    "downloaded": 22721,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "93 debug pnpm:fetching-progress": {
+    "downloaded": 23768,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "94 debug pnpm:fetching-progress": {
+    "downloaded": 25137,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "95 debug pnpm:fetching-progress": {
+    "downloaded": 26506,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "96 debug pnpm:fetching-progress": {
+    "downloaded": 27875,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "97 debug pnpm:fetching-progress": {
+    "downloaded": 32104,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "98 debug pnpm:fetching-progress": {
+    "downloaded": 36333,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "99 debug pnpm:fetching-progress": {
+    "downloaded": 40562,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "100 debug pnpm:fetching-progress": {
+    "downloaded": 44791,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "101 debug pnpm:fetching-progress": {
+    "downloaded": 49020,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "102 debug pnpm:fetching-progress": {
+    "downloaded": 53249,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "103 debug pnpm:fetching-progress": {
+    "downloaded": 56536,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "104 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/resolve/1.20.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "105 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/kleur/4.1.4",
+    "wanted": {
+      "dependentId": "/@sveltejs/vite-plugin-svelte/1.0.0-next.19",
+      "name": "kleur",
+      "rawSpec": "^4.1.4"
+    }
+  },
+  "106 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/kleur/4.1.4",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "107 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/kleur/4.1.4",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "108 warn pnpm:install-check": {
+    "message": "Unsupported platform for registry.npmjs.org/fsevents/2.3.2: wanted {\"cpu\":[\"any\"],\"os\":[\"darwin\"]} (current: {\"os\":\"win32\",\"cpu\":\"x64\"})",
+    "prefix": "D:\\Projects\\upwork\\specta\\core"
+  },
+  "109 debug pnpm:skipped-optional-dependency": {
+    "details": "Error: Unsupported platform for registry.npmjs.org/fsevents/2.3.2: wanted {\"cpu\":[\"any\"],\"os\":[\"darwin\"]} (current: {\"os\":\"win32\",\"cpu\":\"x64\"})",
+    "package": {
+      "id": "registry.npmjs.org/fsevents/2.3.2",
+      "name": "fsevents",
+      "version": "2.3.2"
+    },
+    "prefix": "D:\\Projects\\upwork\\specta\\core",
+    "reason": "unsupported_platform"
+  },
+  "110 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fsevents/2.3.2",
+    "wanted": {
+      "dependentId": "/vite/2.5.1",
+      "name": "fsevents",
+      "rawSpec": "~2.3.2"
+    }
+  },
+  "111 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fsevents/2.3.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "112 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/debug/4.3.2",
+    "wanted": {
+      "dependentId": "/@sveltejs/vite-plugin-svelte/1.0.0-next.19",
+      "name": "debug",
+      "rawSpec": "^4.3.2"
+    }
+  },
+  "113 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/debug/4.3.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "114 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@rollup/pluginutils/4.1.1",
+    "wanted": {
+      "dependentId": "/@sveltejs/vite-plugin-svelte/1.0.0-next.19",
+      "name": "@rollup/pluginutils",
+      "rawSpec": "^4.1.1"
+    }
+  },
+  "115 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@rollup/pluginutils/4.1.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "116 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/app-compat/0.1.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/app-compat",
+      "rawSpec": "0.1.0"
+    }
+  },
+  "117 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/app-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "118 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@rollup/pluginutils/4.1.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "119 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/debug/4.3.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "120 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/app-types/0.7.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/app-types",
+      "rawSpec": "0.7.0"
+    }
+  },
+  "121 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/app-types/0.7.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "122 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/app-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "123 debug pnpm:fetching-progress": {
+    "downloaded": 60765,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "124 debug pnpm:fetching-progress": {
+    "downloaded": 64994,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "125 debug pnpm:fetching-progress": {
+    "downloaded": 69223,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "126 debug pnpm:fetching-progress": {
+    "downloaded": 73452,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "127 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/app-types/0.7.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "128 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/auth/0.17.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/auth",
+      "rawSpec": "0.17.0"
+    }
+  },
+  "129 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/auth/0.17.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "130 debug pnpm:fetching-progress": {
+    "downloaded": 77681,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "131 debug pnpm:fetching-progress": {
+    "downloaded": 81910,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "132 debug pnpm:fetching-progress": {
+    "downloaded": 86139,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "133 debug pnpm:fetching-progress": {
+    "downloaded": 89304,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "134 debug pnpm:fetching-progress": {
+    "downloaded": 93533,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "135 debug pnpm:fetching-progress": {
+    "downloaded": 97762,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "136 debug pnpm:fetching-progress": {
+    "downloaded": 101991,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "137 debug pnpm:fetching-progress": {
+    "downloaded": 106220,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "138 debug pnpm:fetching-progress": {
+    "downloaded": 110449,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "139 debug pnpm:fetching-progress": {
+    "downloaded": 114678,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "140 debug pnpm:fetching-progress": {
+    "downloaded": 118907,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "141 debug pnpm:fetching-progress": {
+    "downloaded": 122072,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "142 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/require-relative/0.8.7",
+    "wanted": {
+      "dependentId": "/@sveltejs/vite-plugin-svelte/1.0.0-next.19",
+      "name": "require-relative",
+      "rawSpec": "^0.8.7"
+    }
+  },
+  "143 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/require-relative/0.8.7",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "144 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/auth-compat/0.1.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/auth-compat",
+      "rawSpec": "0.1.0"
+    }
+  },
+  "145 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/auth-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "146 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/database-compat/0.1.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/database-compat",
+      "rawSpec": "0.1.0"
+    }
+  },
+  "147 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/database-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "148 debug pnpm:fetching-progress": {
+    "downloaded": 126301,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "149 debug pnpm:fetching-progress": {
+    "downloaded": 130530,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "150 debug pnpm:fetching-progress": {
+    "downloaded": 134759,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "151 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/magic-string/0.25.7",
+    "wanted": {
+      "dependentId": "/@sveltejs/vite-plugin-svelte/1.0.0-next.19",
+      "name": "magic-string",
+      "rawSpec": "^0.25.7"
+    }
+  },
+  "152 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/magic-string/0.25.7",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "153 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/firestore-compat/0.1.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/firestore-compat",
+      "rawSpec": "0.1.0"
+    }
+  },
+  "154 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/firestore-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "155 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/auth/0.17.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "156 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/require-relative/0.8.7",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "157 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/auth-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "158 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/database-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "159 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/magic-string/0.25.7",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "160 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/firestore-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "161 debug pnpm:fetching-progress": {
+    "downloaded": 138988,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "162 debug pnpm:fetching-progress": {
+    "downloaded": 143217,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "163 debug pnpm:fetching-progress": {
+    "downloaded": 147446,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "164 debug pnpm:fetching-progress": {
+    "downloaded": 151675,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "165 debug pnpm:fetching-progress": {
+    "downloaded": 154840,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "166 debug pnpm:fetching-progress": {
+    "downloaded": 159069,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "167 debug pnpm:fetching-progress": {
+    "downloaded": 163298,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "168 debug pnpm:fetching-progress": {
+    "downloaded": 167527,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "169 debug pnpm:fetching-progress": {
+    "downloaded": 171756,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "170 debug pnpm:fetching-progress": {
+    "downloaded": 175985,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "171 debug pnpm:fetching-progress": {
+    "downloaded": 180214,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "172 debug pnpm:fetching-progress": {
+    "downloaded": 184443,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "173 debug pnpm:fetching-progress": {
+    "downloaded": 187608,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "174 debug pnpm:fetching-progress": {
+    "downloaded": 191837,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "175 debug pnpm:fetching-progress": {
+    "downloaded": 208221,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "176 debug pnpm:fetching-progress": {
+    "downloaded": 220376,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "177 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chokidar/3.5.2",
+    "wanted": {
+      "dependentId": "/sass/1.38.1",
+      "name": "chokidar",
+      "rawSpec": ">=3.0.0 <4.0.0"
+    }
+  },
+  "178 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chokidar/3.5.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "179 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/functions-compat/0.1.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/functions-compat",
+      "rawSpec": "0.1.0"
+    }
+  },
+  "180 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/functions-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "181 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chokidar/3.5.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "182 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/functions-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "183 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@fullcalendar/common/5.9.0",
+    "wanted": {
+      "dependentId": "/@fullcalendar/daygrid/5.9.0",
+      "name": "@fullcalendar/common",
+      "rawSpec": "~5.9.0"
+    }
+  },
+  "184 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@fullcalendar/common/5.9.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "185 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@fullcalendar/common/5.9.0",
+    "wanted": {
+      "dependentId": "/@fullcalendar/list/5.9.0",
+      "name": "@fullcalendar/common",
+      "rawSpec": "~5.9.0"
+    }
+  },
+  "186 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@fullcalendar/common/5.9.0",
+    "wanted": {
+      "dependentId": "/@fullcalendar/timegrid/5.9.0",
+      "name": "@fullcalendar/common",
+      "rawSpec": "~5.9.0"
+    }
+  },
+  "187 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@fullcalendar/common/5.9.0",
+    "wanted": {
+      "dependentId": "/@fullcalendar/core/5.9.0",
+      "name": "@fullcalendar/common",
+      "rawSpec": "~5.9.0"
+    }
+  },
+  "188 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/messaging-compat/0.1.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/messaging-compat",
+      "rawSpec": "0.1.0"
+    }
+  },
+  "189 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/messaging-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "190 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/storage-compat/0.1.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/storage-compat",
+      "rawSpec": "0.1.0"
+    }
+  },
+  "191 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/storage-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "192 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@fullcalendar/common/5.9.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "193 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/storage/0.8.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/storage",
+      "rawSpec": "0.8.0"
+    }
+  },
+  "194 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/storage/0.8.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "195 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/messaging-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "196 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/storage-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "197 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/performance-compat/0.1.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/performance-compat",
+      "rawSpec": "0.1.0"
+    }
+  },
+  "198 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/performance-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "199 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/storage/0.8.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "200 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/performance-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "201 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/remote-config/0.2.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/remote-config",
+      "rawSpec": "0.2.0"
+    }
+  },
+  "202 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/remote-config/0.2.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "203 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/remote-config-compat/0.1.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/remote-config-compat",
+      "rawSpec": "0.1.0"
+    }
+  },
+  "204 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/remote-config-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "205 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/remote-config/0.2.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "206 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/remote-config-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "207 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/analytics/0.7.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/analytics",
+      "rawSpec": "0.7.0"
+    }
+  },
+  "208 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/analytics/0.7.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "209 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/analytics-compat/0.1.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/analytics-compat",
+      "rawSpec": "0.1.0"
+    }
+  },
+  "210 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/analytics-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "211 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/analytics/0.7.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "212 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/app-check/0.4.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/app-check",
+      "rawSpec": "0.4.0"
+    }
+  },
+  "213 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/app-check/0.4.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "214 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/analytics-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "215 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/app-check-compat/0.1.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/app-check-compat",
+      "rawSpec": "0.1.0"
+    }
+  },
+  "216 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/app-check-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "217 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/app-check/0.4.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "218 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/app-check-compat/0.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "219 debug pnpm:fetching-progress": {
+    "downloaded": 236760,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "220 debug pnpm:fetching-progress": {
+    "downloaded": 253144,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "221 debug pnpm:fetching-progress": {
+    "downloaded": 269528,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "222 debug pnpm:fetching-progress": {
+    "downloaded": 285912,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "223 debug pnpm:fetching-progress": {
+    "downloaded": 302296,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "224 debug pnpm:fetching-progress": {
+    "downloaded": 318680,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "225 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/postcss/8.3.6",
+    "wanted": {
+      "dependentId": "/vite/2.5.1",
+      "name": "postcss",
+      "rawSpec": "^8.3.6"
+    }
+  },
+  "226 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss/8.3.6",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "227 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss/8.3.6",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "228 debug pnpm:fetching-progress": {
+    "downloaded": 335064,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "229 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@popperjs/core/2.9.3",
+    "wanted": {
+      "dependentId": "/sveltestrap/5.6.2",
+      "name": "@popperjs/core",
+      "rawSpec": "^2.9.2"
+    }
+  },
+  "230 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@popperjs/core/2.9.3",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "231 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@popperjs/core/2.9.3",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "232 debug pnpm:fetching-progress": {
+    "downloaded": 351448,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "233 debug pnpm:fetching-progress": {
+    "downloaded": 362857,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "234 debug pnpm:fetching-progress": {
+    "downloaded": 379241,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "235 debug pnpm:fetching-progress": {
+    "downloaded": 395625,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "236 debug pnpm:fetching-progress": {
+    "downloaded": 412009,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "237 debug pnpm:fetching-progress": {
+    "downloaded": 428393,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "238 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/min-indent/1.0.1",
+    "wanted": {
+      "dependentId": "/strip-indent/3.0.0",
+      "name": "min-indent",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "239 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/min-indent/1.0.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "240 warn pnpm:install-check": {
+    "message": "Unsupported platform for registry.npmjs.org/fsevents/2.3.2: wanted {\"cpu\":[\"any\"],\"os\":[\"darwin\"]} (current: {\"os\":\"win32\",\"cpu\":\"x64\"})",
+    "prefix": "D:\\Projects\\upwork\\specta\\core"
+  },
+  "241 debug pnpm:skipped-optional-dependency": {
+    "details": "Error: Unsupported platform for registry.npmjs.org/fsevents/2.3.2: wanted {\"cpu\":[\"any\"],\"os\":[\"darwin\"]} (current: {\"os\":\"win32\",\"cpu\":\"x64\"})",
+    "package": {
+      "id": "registry.npmjs.org/fsevents/2.3.2",
+      "name": "fsevents",
+      "version": "2.3.2"
+    },
+    "prefix": "D:\\Projects\\upwork\\specta\\core",
+    "reason": "unsupported_platform"
+  },
+  "242 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fsevents/2.3.2",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.2",
+      "name": "fsevents",
+      "rawSpec": "~2.3.2"
+    }
+  },
+  "243 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/min-indent/1.0.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "244 debug pnpm:fetching-progress": {
+    "downloaded": 444777,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "245 debug pnpm:fetching-progress": {
+    "downloaded": 461161,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "246 debug pnpm:fetching-progress": {
+    "downloaded": 477545,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "247 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-hmr/0.14.7",
+    "wanted": {
+      "dependentId": "/@sveltejs/vite-plugin-svelte/1.0.0-next.19",
+      "name": "svelte-hmr",
+      "rawSpec": "^0.14.7"
+    }
+  },
+  "248 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-hmr/0.14.7",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "249 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-hmr/0.14.7",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "250 debug pnpm:fetching-progress": {
+    "downloaded": 493929,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "251 debug pnpm:fetching-progress": {
+    "downloaded": 510313,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "252 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/preact/10.5.14",
+    "wanted": {
+      "dependentId": "/@fullcalendar/core/5.9.0",
+      "name": "preact",
+      "rawSpec": "^10.0.5"
+    }
+  },
+  "253 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/preact/10.5.14",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "254 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/preact/10.5.14",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "255 debug pnpm:fetching-progress": {
+    "downloaded": 526697,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "256 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/anymatch/3.1.2",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.2",
+      "name": "anymatch",
+      "rawSpec": "~3.1.2"
+    }
+  },
+  "257 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/anymatch/3.1.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "258 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/anymatch/3.1.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "259 debug pnpm:fetching-progress": {
+    "downloaded": 543081,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "260 debug pnpm:fetching-progress": {
+    "downloaded": 559465,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "261 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/braces/3.0.2",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.2",
+      "name": "braces",
+      "rawSpec": "~3.0.2"
+    }
+  },
+  "262 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/braces/3.0.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "263 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/braces/3.0.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "264 debug pnpm:fetching-progress": {
+    "downloaded": 575849,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "265 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/glob-parent/5.1.2",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.2",
+      "name": "glob-parent",
+      "rawSpec": "~5.1.2"
+    }
+  },
+  "266 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob-parent/5.1.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "267 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob-parent/5.1.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "268 debug pnpm:fetching-progress": {
+    "downloaded": 592233,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "269 debug pnpm:fetching-progress": {
+    "downloaded": 608617,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "270 debug pnpm:fetching-progress": {
+    "downloaded": 625001,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "271 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-binary-path/2.1.0",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.2",
+      "name": "is-binary-path",
+      "rawSpec": "~2.1.0"
+    }
+  },
+  "272 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-binary-path/2.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "273 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-binary-path/2.1.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "274 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/esbuild/0.12.24",
+    "wanted": {
+      "dependentId": "/vite/2.5.1",
+      "name": "esbuild",
+      "rawSpec": "^0.12.17"
+    }
+  },
+  "275 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esbuild/0.12.24",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "276 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/tslib/2.3.1",
+    "wanted": {
+      "dependentId": "/@fullcalendar/common/5.9.0",
+      "name": "tslib",
+      "rawSpec": "^2.1.0"
+    }
+  },
+  "277 debug pnpm:fetching-progress": {
+    "downloaded": 641385,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "278 debug pnpm:fetching-progress": {
+    "downloaded": 657769,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "279 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-glob/4.0.1",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.2",
+      "name": "is-glob",
+      "rawSpec": "~4.0.1"
+    }
+  },
+  "280 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-glob/4.0.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "281 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ms/2.1.2",
+    "wanted": {
+      "dependentId": "/debug/4.3.2",
+      "name": "ms",
+      "rawSpec": "2.1.2"
+    }
+  },
+  "282 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ms/2.1.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "283 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esbuild/0.12.24",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "284 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-glob/4.0.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "285 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ms/2.1.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "286 debug pnpm:fetching-progress": {
+    "downloaded": 674153,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "287 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/normalize-path/3.0.0",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.2",
+      "name": "normalize-path",
+      "rawSpec": "~3.0.0"
+    }
+  },
+  "288 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/normalize-path/3.0.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "289 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/normalize-path/3.0.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "290 debug pnpm:fetching-progress": {
+    "downloaded": 690537,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "291 debug pnpm:fetching-progress": {
+    "downloaded": 706921,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "292 debug pnpm:fetching-progress": {
+    "downloaded": 723305,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "293 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/estree-walker/2.0.2",
+    "wanted": {
+      "dependentId": "/@rollup/pluginutils/4.1.1",
+      "name": "estree-walker",
+      "rawSpec": "^2.0.1"
+    }
+  },
+  "294 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/estree-walker/2.0.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "295 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/estree-walker/2.0.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "296 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/readdirp/3.6.0",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.2",
+      "name": "readdirp",
+      "rawSpec": "~3.6.0"
+    }
+  },
+  "297 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/readdirp/3.6.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "298 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/normalize-path/3.0.0",
+    "wanted": {
+      "dependentId": "/anymatch/3.1.2",
+      "name": "normalize-path",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "299 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/readdirp/3.6.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "300 debug pnpm:fetching-progress": {
+    "downloaded": 739689,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "301 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/picomatch/2.3.0",
+    "wanted": {
+      "dependentId": "/@rollup/pluginutils/4.1.1",
+      "name": "picomatch",
+      "rawSpec": "^2.2.2"
+    }
+  },
+  "302 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/picomatch/2.3.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "303 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/picomatch/2.3.0",
+    "wanted": {
+      "dependentId": "/anymatch/3.1.2",
+      "name": "picomatch",
+      "rawSpec": "^2.0.4"
+    }
+  },
+  "304 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-glob/4.0.1",
+    "wanted": {
+      "dependentId": "/glob-parent/5.1.2",
+      "name": "is-glob",
+      "rawSpec": "^4.0.1"
+    }
+  },
+  "305 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/picomatch/2.3.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "306 debug pnpm:fetching-progress": {
+    "downloaded": 756073,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "307 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/sourcemap-codec/1.4.8",
+    "wanted": {
+      "dependentId": "/magic-string/0.25.7",
+      "name": "sourcemap-codec",
+      "rawSpec": "^1.4.4"
+    }
+  },
+  "308 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sourcemap-codec/1.4.8",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "309 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/picomatch/2.3.0",
+    "wanted": {
+      "dependentId": "/readdirp/3.6.0",
+      "name": "picomatch",
+      "rawSpec": "^2.2.1"
+    }
+  },
+  "310 debug pnpm:fetching-progress": {
+    "downloaded": 772457,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "311 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sourcemap-codec/1.4.8",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "312 debug pnpm:fetching-progress": {
+    "downloaded": 788841,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "313 debug pnpm:fetching-progress": {
+    "downloaded": 805225,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "314 debug pnpm:fetching-progress": {
+    "downloaded": 821609,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "315 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fill-range/7.0.1",
+    "wanted": {
+      "dependentId": "/braces/3.0.2",
+      "name": "fill-range",
+      "rawSpec": "^7.0.1"
+    }
+  },
+  "316 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fill-range/7.0.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "317 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fill-range/7.0.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "318 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-extglob/2.1.1",
+    "wanted": {
+      "dependentId": "/is-glob/4.0.1",
+      "name": "is-extglob",
+      "rawSpec": "^2.1.1"
+    }
+  },
+  "319 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-extglob/2.1.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "320 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-extglob/2.1.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "321 debug pnpm:fetching-progress": {
+    "downloaded": 837993,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "322 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/binary-extensions/2.2.0",
+    "wanted": {
+      "dependentId": "/is-binary-path/2.1.0",
+      "name": "binary-extensions",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "323 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/binary-extensions/2.2.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "324 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/binary-extensions/2.2.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "325 debug pnpm:fetching-progress": {
+    "downloaded": 854377,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "326 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/to-regex-range/5.0.1",
+    "wanted": {
+      "dependentId": "/fill-range/7.0.1",
+      "name": "to-regex-range",
+      "rawSpec": "^5.0.1"
+    }
+  },
+  "327 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/to-regex-range/5.0.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "328 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/to-regex-range/5.0.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "329 debug pnpm:fetching-progress": {
+    "downloaded": 870761,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "330 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-number/7.0.0",
+    "wanted": {
+      "dependentId": "/to-regex-range/5.0.1",
+      "name": "is-number",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "331 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-number/7.0.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "332 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-number/7.0.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "333 debug pnpm:fetching-progress": {
+    "downloaded": 887145,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "334 debug pnpm:fetching-progress": {
+    "downloaded": 903529,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "335 debug pnpm:fetching-progress": {
+    "downloaded": 919913,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "336 debug pnpm:fetching-progress": {
+    "downloaded": 936297,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "337 debug pnpm:fetching-progress": {
+    "downloaded": 952681,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "338 debug pnpm:fetching-progress": {
+    "downloaded": 969065,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "339 debug pnpm:fetching-progress": {
+    "downloaded": 985449,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "340 debug pnpm:fetching-progress": {
+    "downloaded": 1001833,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "341 debug pnpm:fetching-progress": {
+    "downloaded": 1018217,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "342 debug pnpm:fetching-progress": {
+    "downloaded": 1034601,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "343 debug pnpm:fetching-progress": {
+    "downloaded": 1050985,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "344 debug pnpm:fetching-progress": {
+    "downloaded": 1067369,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "345 debug pnpm:fetching-progress": {
+    "downloaded": 1083753,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "346 debug pnpm:fetching-progress": {
+    "downloaded": 1087849,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "347 debug pnpm:fetching-progress": {
+    "downloaded": 1104233,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "348 debug pnpm:fetching-progress": {
+    "downloaded": 1120617,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "349 debug pnpm:fetching-progress": {
+    "downloaded": 1137001,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "350 debug pnpm:fetching-progress": {
+    "downloaded": 1153385,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "351 debug pnpm:fetching-progress": {
+    "downloaded": 1169769,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "352 debug pnpm:fetching-progress": {
+    "downloaded": 1186153,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "353 debug pnpm:fetching-progress": {
+    "downloaded": 1202537,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "354 debug pnpm:fetching-progress": {
+    "downloaded": 1218921,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "355 debug pnpm:fetching-progress": {
+    "downloaded": 1235305,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "356 debug pnpm:fetching-progress": {
+    "downloaded": 1251689,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "357 debug pnpm:fetching-progress": {
+    "downloaded": 1268073,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "358 debug pnpm:fetching-progress": {
+    "downloaded": 1284457,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "359 debug pnpm:fetching-progress": {
+    "downloaded": 1300841,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "360 debug pnpm:fetching-progress": {
+    "downloaded": 1317225,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "361 debug pnpm:fetching-progress": {
+    "downloaded": 1333609,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "362 debug pnpm:fetching-progress": {
+    "downloaded": 1349993,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "363 debug pnpm:fetching-progress": {
+    "downloaded": 1366377,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "364 debug pnpm:fetching-progress": {
+    "downloaded": 1382761,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "365 debug pnpm:fetching-progress": {
+    "downloaded": 1399145,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "366 debug pnpm:fetching-progress": {
+    "downloaded": 1415529,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "367 debug pnpm:fetching-progress": {
+    "downloaded": 1431913,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "368 debug pnpm:fetching-progress": {
+    "downloaded": 1448297,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "369 debug pnpm:fetching-progress": {
+    "downloaded": 1464681,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "370 debug pnpm:fetching-progress": {
+    "downloaded": 1481065,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "371 debug pnpm:fetching-progress": {
+    "downloaded": 1497449,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "372 debug pnpm:fetching-progress": {
+    "downloaded": 1509737,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "373 debug pnpm:fetching-progress": {
+    "downloaded": 1513833,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "374 debug pnpm:fetching-progress": {
+    "downloaded": 1530217,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "375 debug pnpm:fetching-progress": {
+    "downloaded": 1542505,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "376 debug pnpm:fetching-progress": {
+    "downloaded": 1558889,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "377 debug pnpm:fetching-progress": {
+    "downloaded": 1575273,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "378 debug pnpm:fetching-progress": {
+    "downloaded": 1591657,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "379 debug pnpm:fetching-progress": {
+    "downloaded": 1608041,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "380 debug pnpm:fetching-progress": {
+    "downloaded": 1624425,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "381 debug pnpm:fetching-progress": {
+    "downloaded": 1640809,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "382 debug pnpm:fetching-progress": {
+    "downloaded": 1657193,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "383 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/rollup/2.56.3",
+    "wanted": {
+      "dependentId": "/vite/2.5.1",
+      "name": "rollup",
+      "rawSpec": "^2.38.5"
+    }
+  },
+  "384 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rollup/2.56.3",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "385 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/messaging/0.9.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/messaging",
+      "rawSpec": "0.9.0"
+    }
+  },
+  "386 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/messaging/0.9.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "387 warn pnpm:install-check": {
+    "message": "Unsupported platform for registry.npmjs.org/fsevents/2.3.2: wanted {\"cpu\":[\"any\"],\"os\":[\"darwin\"]} (current: {\"os\":\"win32\",\"cpu\":\"x64\"})",
+    "prefix": "D:\\Projects\\upwork\\specta\\core"
+  },
+  "388 debug pnpm:skipped-optional-dependency": {
+    "details": "Error: Unsupported platform for registry.npmjs.org/fsevents/2.3.2: wanted {\"cpu\":[\"any\"],\"os\":[\"darwin\"]} (current: {\"os\":\"win32\",\"cpu\":\"x64\"})",
+    "package": {
+      "id": "registry.npmjs.org/fsevents/2.3.2",
+      "name": "fsevents",
+      "version": "2.3.2"
+    },
+    "prefix": "D:\\Projects\\upwork\\specta\\core",
+    "reason": "unsupported_platform"
+  },
+  "389 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fsevents/2.3.2",
+    "wanted": {
+      "dependentId": "/rollup/2.56.3",
+      "name": "fsevents",
+      "rawSpec": "~2.3.2"
+    }
+  },
+  "390 debug pnpm:fetching-progress": {
+    "downloaded": 1673577,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "391 debug pnpm:fetching-progress": {
+    "downloaded": 1689961,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "392 debug pnpm:fetching-progress": {
+    "downloaded": 1706345,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "393 debug pnpm:fetching-progress": {
+    "downloaded": 1722729,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "394 debug pnpm:fetching-progress": {
+    "downloaded": 1739113,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "395 debug pnpm:fetching-progress": {
+    "downloaded": 1755497,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "396 debug pnpm:fetching-progress": {
+    "downloaded": 1771881,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "397 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rollup/2.56.3",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "398 debug pnpm:fetching-progress": {
+    "downloaded": 1788265,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "399 debug pnpm:fetching-progress": {
+    "downloaded": 1804649,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "400 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@firebase/messaging/0.9.0",
+    "size": 128506,
+    "status": "started"
+  },
+  "401 debug pnpm:fetching-progress": {
+    "downloaded": 1821033,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "402 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-core-module/2.6.0",
+    "wanted": {
+      "dependentId": "/resolve/1.20.0",
+      "name": "is-core-module",
+      "rawSpec": "^2.2.0"
+    }
+  },
+  "403 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-core-module/2.6.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "404 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-core-module/2.6.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "405 debug pnpm:fetching-progress": {
+    "downloaded": 1837417,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "406 debug pnpm:fetching-progress": {
+    "downloaded": 1853801,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "407 debug pnpm:fetching-progress": {
+    "downloaded": 1870185,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "408 debug pnpm:fetching-progress": {
+    "downloaded": 1886569,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "409 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/messaging/0.9.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "fetched"
+  },
+  "410 debug pnpm:fetching-progress": {
+    "downloaded": 1902953,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "411 debug pnpm:fetching-progress": {
+    "downloaded": 1919337,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "412 debug pnpm:fetching-progress": {
+    "downloaded": 1935721,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "413 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-parse/1.0.7",
+    "wanted": {
+      "dependentId": "/resolve/1.20.0",
+      "name": "path-parse",
+      "rawSpec": "^1.0.6"
+    }
+  },
+  "414 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-parse/1.0.7",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "415 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-parse/1.0.7",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "416 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/source-map-js/0.6.2",
+    "wanted": {
+      "dependentId": "/postcss/8.3.6",
+      "name": "source-map-js",
+      "rawSpec": "^0.6.2"
+    }
+  },
+  "417 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/source-map-js/0.6.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "418 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/source-map-js/0.6.2",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "419 debug pnpm:fetching-progress": {
+    "downloaded": 1952105,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "420 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/colorette/1.3.0",
+    "wanted": {
+      "dependentId": "/postcss/8.3.6",
+      "name": "colorette",
+      "rawSpec": "^1.2.2"
+    }
+  },
+  "421 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/colorette/1.3.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "422 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/colorette/1.3.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "423 debug pnpm:fetching-progress": {
+    "downloaded": 1968489,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "424 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/performance/0.5.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/performance",
+      "rawSpec": "0.5.0"
+    }
+  },
+  "425 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/performance/0.5.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "426 debug pnpm:fetching-progress": {
+    "downloaded": 1984873,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "427 debug pnpm:fetching-progress": {
+    "downloaded": 2001257,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "428 debug pnpm:fetching-progress": {
+    "downloaded": 2017641,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "429 debug pnpm:fetching-progress": {
+    "downloaded": 2034025,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "430 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/has/1.0.3",
+    "wanted": {
+      "dependentId": "/is-core-module/2.6.0",
+      "name": "has",
+      "rawSpec": "^1.0.3"
+    }
+  },
+  "431 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has/1.0.3",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "432 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/has/1.0.3",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "433 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/nanoid/3.1.25",
+    "wanted": {
+      "dependentId": "/postcss/8.3.6",
+      "name": "nanoid",
+      "rawSpec": "^3.1.23"
+    }
+  },
+  "434 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/nanoid/3.1.25",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "435 debug pnpm:fetching-progress": {
+    "downloaded": 2050409,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "436 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/nanoid/3.1.25",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "437 debug pnpm:fetching-progress": {
+    "downloaded": 2066793,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "438 debug pnpm:fetching-progress": {
+    "downloaded": 2083177,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "439 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@firebase/performance/0.5.0",
+    "size": 115013,
+    "status": "started"
+  },
+  "440 debug pnpm:fetching-progress": {
+    "downloaded": 2099561,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "441 debug pnpm:fetching-progress": {
+    "downloaded": 2115945,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "442 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/performance/0.5.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "fetched"
+  },
+  "443 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/function-bind/1.1.1",
+    "wanted": {
+      "dependentId": "/has/1.0.3",
+      "name": "function-bind",
+      "rawSpec": "^1.1.1"
+    }
+  },
+  "444 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/function-bind/1.1.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "445 debug pnpm:fetching-progress": {
+    "downloaded": 2132329,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "446 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/function-bind/1.1.1",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "447 debug pnpm:fetching-progress": {
+    "downloaded": 2148713,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "448 debug pnpm:fetching-progress": {
+    "downloaded": 2165097,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "449 debug pnpm:fetching-progress": {
+    "downloaded": 2181481,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "450 debug pnpm:fetching-progress": {
+    "downloaded": 2197865,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "451 debug pnpm:fetching-progress": {
+    "downloaded": 2214249,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "452 debug pnpm:fetching-progress": {
+    "downloaded": 2230633,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "453 debug pnpm:fetching-progress": {
+    "downloaded": 2247017,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "454 debug pnpm:fetching-progress": {
+    "downloaded": 2263401,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "455 debug pnpm:fetching-progress": {
+    "downloaded": 2279785,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "456 debug pnpm:fetching-progress": {
+    "downloaded": 2296169,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "457 debug pnpm:fetching-progress": {
+    "downloaded": 2312553,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "458 debug pnpm:fetching-progress": {
+    "downloaded": 2328937,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "459 debug pnpm:fetching-progress": {
+    "downloaded": 2345321,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "460 debug pnpm:fetching-progress": {
+    "downloaded": 2361705,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "461 debug pnpm:fetching-progress": {
+    "downloaded": 2378089,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "462 debug pnpm:fetching-progress": {
+    "downloaded": 2394473,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "463 debug pnpm:fetching-progress": {
+    "downloaded": 2410857,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "464 debug pnpm:fetching-progress": {
+    "downloaded": 2427241,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "465 debug pnpm:fetching-progress": {
+    "downloaded": 2443625,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "466 debug pnpm:fetching-progress": {
+    "downloaded": 2460009,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "467 debug pnpm:fetching-progress": {
+    "downloaded": 2476393,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "468 debug pnpm:fetching-progress": {
+    "downloaded": 2492777,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "469 debug pnpm:fetching-progress": {
+    "downloaded": 2509161,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "470 debug pnpm:fetching-progress": {
+    "downloaded": 2525545,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "471 debug pnpm:fetching-progress": {
+    "downloaded": 2541929,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "472 debug pnpm:fetching-progress": {
+    "downloaded": 2558313,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "473 debug pnpm:fetching-progress": {
+    "downloaded": 2574697,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "474 debug pnpm:fetching-progress": {
+    "downloaded": 2591081,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "475 debug pnpm:fetching-progress": {
+    "downloaded": 2607465,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "476 debug pnpm:fetching-progress": {
+    "downloaded": 2623849,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "477 debug pnpm:fetching-progress": {
+    "downloaded": 2640233,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "478 debug pnpm:fetching-progress": {
+    "downloaded": 2656617,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "479 debug pnpm:fetching-progress": {
+    "downloaded": 2673001,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "480 debug pnpm:fetching-progress": {
+    "downloaded": 2689385,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "481 debug pnpm:fetching-progress": {
+    "downloaded": 2705769,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "482 debug pnpm:fetching-progress": {
+    "downloaded": 2722153,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "483 debug pnpm:fetching-progress": {
+    "downloaded": 2738537,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "484 debug pnpm:fetching-progress": {
+    "downloaded": 2754921,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "485 debug pnpm:fetching-progress": {
+    "downloaded": 2771305,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "486 debug pnpm:fetching-progress": {
+    "downloaded": 2787689,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "487 debug pnpm:fetching-progress": {
+    "downloaded": 2804073,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "488 debug pnpm:fetching-progress": {
+    "downloaded": 2820457,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "489 debug pnpm:fetching-progress": {
+    "downloaded": 2836841,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "490 debug pnpm:fetching-progress": {
+    "downloaded": 2853225,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "491 debug pnpm:fetching-progress": {
+    "downloaded": 2869609,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "492 debug pnpm:fetching-progress": {
+    "downloaded": 2885993,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "493 debug pnpm:fetching-progress": {
+    "downloaded": 2902377,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "494 debug pnpm:fetching-progress": {
+    "downloaded": 2918761,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "495 debug pnpm:fetching-progress": {
+    "downloaded": 2935145,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "496 debug pnpm:fetching-progress": {
+    "downloaded": 2951529,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "497 debug pnpm:fetching-progress": {
+    "downloaded": 2967913,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "498 debug pnpm:fetching-progress": {
+    "downloaded": 2984297,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "499 debug pnpm:fetching-progress": {
+    "downloaded": 3000681,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "500 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/node/16.7.4",
+    "wanted": {
+      "dependentId": "/@types/sass/1.16.1",
+      "name": "@types/node",
+      "rawSpec": "*"
+    }
+  },
+  "501 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/node/16.7.4",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "502 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/node/16.7.4",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "found_in_store"
+  },
+  "503 debug pnpm:fetching-progress": {
+    "downloaded": 3017065,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "504 debug pnpm:fetching-progress": {
+    "downloaded": 3033449,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "505 debug pnpm:fetching-progress": {
+    "downloaded": 3049833,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "506 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/polyfill/0.3.36",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/polyfill",
+      "rawSpec": "0.3.36"
+    }
+  },
+  "507 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/polyfill/0.3.36",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "508 debug pnpm:fetching-progress": {
+    "downloaded": 3066217,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "509 debug pnpm:fetching-progress": {
+    "downloaded": 3082601,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "510 debug pnpm:fetching-progress": {
+    "downloaded": 3098985,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "511 debug pnpm:fetching-progress": {
+    "downloaded": 3115369,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "512 debug pnpm:fetching-progress": {
+    "downloaded": 3131753,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "513 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@firebase/polyfill/0.3.36",
+    "size": 1605,
+    "status": "started"
+  },
+  "514 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/polyfill/0.3.36",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "fetched"
+  },
+  "515 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@firebase%2Fapp (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@firebase%2Fapp"
+  },
+  "516 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@firebase%2Ffunctions (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@firebase%2Ffunctions"
+  },
+  "517 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@firebase%2Ffirestore (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@firebase%2Ffirestore"
+  },
+  "518 debug pnpm:fetching-progress": {
+    "downloaded": 3148137,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "519 debug pnpm:fetching-progress": {
+    "downloaded": 3164521,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "520 debug pnpm:fetching-progress": {
+    "downloaded": 3180905,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "521 debug pnpm:fetching-progress": {
+    "downloaded": 3197289,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "522 debug pnpm:fetching-progress": {
+    "downloaded": 3213673,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "523 debug pnpm:fetching-progress": {
+    "downloaded": 3230057,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "524 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@firebase%2Finstallations (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@firebase%2Finstallations"
+  },
+  "525 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@firebase%2Fdatabase (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@firebase%2Fdatabase"
+  },
+  "526 debug pnpm:fetching-progress": {
+    "downloaded": 3246441,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "527 debug pnpm:fetching-progress": {
+    "downloaded": 3262825,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "528 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@firebase%2Futil (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@firebase%2Futil"
+  },
+  "529 debug pnpm:fetching-progress": {
+    "downloaded": 3279209,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "530 debug pnpm:fetching-progress": {
+    "downloaded": 3295593,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "531 debug pnpm:fetching-progress": {
+    "downloaded": 3311977,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "532 debug pnpm:fetching-progress": {
+    "downloaded": 3328361,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "533 debug pnpm:fetching-progress": {
+    "downloaded": 3344745,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "534 debug pnpm:fetching-progress": {
+    "downloaded": 3361129,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "535 debug pnpm:fetching-progress": {
+    "downloaded": 3377513,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "536 debug pnpm:fetching-progress": {
+    "downloaded": 3393897,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "537 debug pnpm:fetching-progress": {
+    "downloaded": 3410281,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "538 debug pnpm:fetching-progress": {
+    "downloaded": 3426665,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "539 debug pnpm:fetching-progress": {
+    "downloaded": 3443049,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "540 debug pnpm:fetching-progress": {
+    "downloaded": 3459433,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "541 debug pnpm:fetching-progress": {
+    "downloaded": 3475817,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "542 debug pnpm:fetching-progress": {
+    "downloaded": 3492201,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "543 debug pnpm:fetching-progress": {
+    "downloaded": 3508585,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "544 debug pnpm:fetching-progress": {
+    "downloaded": 3524969,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "545 debug pnpm:fetching-progress": {
+    "downloaded": 3541353,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "546 debug pnpm:fetching-progress": {
+    "downloaded": 3557737,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "547 debug pnpm:fetching-progress": {
+    "downloaded": 3570025,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "548 debug pnpm:fetching-progress": {
+    "downloaded": 3586409,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "549 debug pnpm:fetching-progress": {
+    "downloaded": 3602793,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "550 debug pnpm:fetching-progress": {
+    "downloaded": 3619177,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "551 debug pnpm:fetching-progress": {
+    "downloaded": 3635561,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "552 debug pnpm:fetching-progress": {
+    "downloaded": 3651945,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "553 debug pnpm:fetching-progress": {
+    "downloaded": 3668329,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "554 debug pnpm:fetching-progress": {
+    "downloaded": 3684713,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "555 debug pnpm:fetching-progress": {
+    "downloaded": 3701097,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "556 debug pnpm:fetching-progress": {
+    "downloaded": 3717481,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "557 debug pnpm:fetching-progress": {
+    "downloaded": 3733865,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "558 debug pnpm:fetching-progress": {
+    "downloaded": 3750249,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "559 debug pnpm:fetching-progress": {
+    "downloaded": 3766633,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "560 debug pnpm:fetching-progress": {
+    "downloaded": 3783017,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "561 debug pnpm:fetching-progress": {
+    "downloaded": 3799401,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "562 debug pnpm:fetching-progress": {
+    "downloaded": 3815785,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "563 debug pnpm:fetching-progress": {
+    "downloaded": 3832169,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "564 debug pnpm:fetching-progress": {
+    "downloaded": 3848553,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "565 debug pnpm:fetching-progress": {
+    "downloaded": 3864937,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "566 debug pnpm:fetching-progress": {
+    "downloaded": 3881321,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "567 debug pnpm:fetching-progress": {
+    "downloaded": 3897705,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "568 debug pnpm:fetching-progress": {
+    "downloaded": 3914089,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "569 debug pnpm:fetching-progress": {
+    "downloaded": 3930473,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "570 debug pnpm:fetching-progress": {
+    "downloaded": 3946857,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "571 debug pnpm:fetching-progress": {
+    "downloaded": 3963241,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "572 debug pnpm:fetching-progress": {
+    "downloaded": 3979625,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "573 debug pnpm:fetching-progress": {
+    "downloaded": 3996009,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "574 debug pnpm:fetching-progress": {
+    "downloaded": 4012393,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "575 debug pnpm:fetching-progress": {
+    "downloaded": 4028777,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "576 debug pnpm:fetching-progress": {
+    "downloaded": 4045161,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "577 debug pnpm:fetching-progress": {
+    "downloaded": 4061545,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "578 debug pnpm:fetching-progress": {
+    "downloaded": 4077929,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "579 debug pnpm:fetching-progress": {
+    "downloaded": 4094313,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "580 debug pnpm:fetching-progress": {
+    "downloaded": 4110697,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "581 debug pnpm:fetching-progress": {
+    "downloaded": 4127081,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "582 debug pnpm:fetching-progress": {
+    "downloaded": 4143465,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "583 debug pnpm:fetching-progress": {
+    "downloaded": 4159849,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "584 debug pnpm:fetching-progress": {
+    "downloaded": 4176233,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "585 debug pnpm:fetching-progress": {
+    "downloaded": 4192617,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "586 debug pnpm:fetching-progress": {
+    "downloaded": 4209001,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "587 debug pnpm:fetching-progress": {
+    "downloaded": 4225385,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "588 debug pnpm:fetching-progress": {
+    "downloaded": 4241769,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "589 debug pnpm:fetching-progress": {
+    "downloaded": 4258153,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "590 debug pnpm:fetching-progress": {
+    "downloaded": 4274537,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "591 debug pnpm:fetching-progress": {
+    "downloaded": 4290921,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "592 debug pnpm:fetching-progress": {
+    "downloaded": 4307305,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "593 debug pnpm:fetching-progress": {
+    "downloaded": 4323689,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "594 debug pnpm:fetching-progress": {
+    "downloaded": 4340073,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "595 debug pnpm:fetching-progress": {
+    "downloaded": 4356457,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "596 debug pnpm:fetching-progress": {
+    "downloaded": 4372841,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "597 debug pnpm:fetching-progress": {
+    "downloaded": 4389225,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "598 debug pnpm:fetching-progress": {
+    "downloaded": 4405609,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "599 debug pnpm:fetching-progress": {
+    "downloaded": 4421993,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "600 debug pnpm:fetching-progress": {
+    "downloaded": 4438377,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "601 debug pnpm:fetching-progress": {
+    "downloaded": 4454761,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "602 debug pnpm:fetching-progress": {
+    "downloaded": 4471145,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "603 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/installations/0.5.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/installations",
+      "rawSpec": "0.5.0"
+    }
+  },
+  "604 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/installations/0.5.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "605 debug pnpm:fetching-progress": {
+    "downloaded": 4487529,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "606 debug pnpm:fetching-progress": {
+    "downloaded": 4503913,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "607 debug pnpm:fetching-progress": {
+    "downloaded": 4520297,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "608 debug pnpm:fetching-progress": {
+    "downloaded": 4536681,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "609 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@firebase/installations/0.5.0",
+    "size": 72541,
+    "status": "started"
+  },
+  "610 debug pnpm:fetching-progress": {
+    "downloaded": 4553065,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "611 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/installations/0.5.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "fetched"
+  },
+  "612 debug pnpm:fetching-progress": {
+    "downloaded": 4569449,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "613 debug pnpm:fetching-progress": {
+    "downloaded": 4585833,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "614 debug pnpm:fetching-progress": {
+    "downloaded": 4602217,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "615 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@firebase%2Fapp (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@firebase%2Fapp"
+  },
+  "616 debug pnpm:fetching-progress": {
+    "downloaded": 4618601,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "617 debug pnpm:fetching-progress": {
+    "downloaded": 4634985,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "618 debug pnpm:fetching-progress": {
+    "downloaded": 4651369,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "619 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@firebase%2Ffunctions (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@firebase%2Ffunctions"
+  },
+  "620 debug pnpm:fetching-progress": {
+    "downloaded": 4667753,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "621 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@firebase%2Ffirestore (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@firebase%2Ffirestore"
+  },
+  "622 debug pnpm:fetching-progress": {
+    "downloaded": 4684137,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "623 debug pnpm:fetching-progress": {
+    "downloaded": 4700521,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "624 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@firebase%2Fdatabase (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@firebase%2Fdatabase"
+  },
+  "625 debug pnpm:fetching-progress": {
+    "downloaded": 4716905,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "626 debug pnpm:fetching-progress": {
+    "downloaded": 4733289,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "627 debug pnpm:fetching-progress": {
+    "downloaded": 4749673,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "628 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@firebase%2Futil (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@firebase%2Futil"
+  },
+  "629 debug pnpm:fetching-progress": {
+    "downloaded": 4766057,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "630 debug pnpm:fetching-progress": {
+    "downloaded": 4782441,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "631 debug pnpm:fetching-progress": {
+    "downloaded": 4798825,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "632 debug pnpm:fetching-progress": {
+    "downloaded": 4815209,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "633 debug pnpm:fetching-progress": {
+    "downloaded": 4831593,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "634 debug pnpm:fetching-progress": {
+    "downloaded": 4847977,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "635 debug pnpm:fetching-progress": {
+    "downloaded": 4864361,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "636 debug pnpm:fetching-progress": {
+    "downloaded": 4880745,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "637 debug pnpm:fetching-progress": {
+    "downloaded": 4897129,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "638 debug pnpm:fetching-progress": {
+    "downloaded": 4913513,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "639 debug pnpm:fetching-progress": {
+    "downloaded": 4929897,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "640 debug pnpm:fetching-progress": {
+    "downloaded": 4946281,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "641 debug pnpm:fetching-progress": {
+    "downloaded": 4962665,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "642 debug pnpm:fetching-progress": {
+    "downloaded": 4979049,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "643 debug pnpm:fetching-progress": {
+    "downloaded": 4995433,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "644 debug pnpm:fetching-progress": {
+    "downloaded": 5011817,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "645 debug pnpm:fetching-progress": {
+    "downloaded": 5028201,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "646 debug pnpm:fetching-progress": {
+    "downloaded": 5044585,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "647 debug pnpm:fetching-progress": {
+    "downloaded": 5060969,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "648 debug pnpm:fetching-progress": {
+    "downloaded": 5077353,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "649 debug pnpm:fetching-progress": {
+    "downloaded": 5093737,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "650 debug pnpm:fetching-progress": {
+    "downloaded": 5110121,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "651 debug pnpm:fetching-progress": {
+    "downloaded": 5126505,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "652 debug pnpm:fetching-progress": {
+    "downloaded": 5142889,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "653 debug pnpm:fetching-progress": {
+    "downloaded": 5159273,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "654 debug pnpm:fetching-progress": {
+    "downloaded": 5175657,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "655 debug pnpm:fetching-progress": {
+    "downloaded": 5192041,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "656 debug pnpm:fetching-progress": {
+    "downloaded": 5208425,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "657 debug pnpm:fetching-progress": {
+    "downloaded": 5224809,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "658 debug pnpm:fetching-progress": {
+    "downloaded": 5241193,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "659 debug pnpm:fetching-progress": {
+    "downloaded": 5257577,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "660 debug pnpm:fetching-progress": {
+    "downloaded": 5273961,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "661 debug pnpm:fetching-progress": {
+    "downloaded": 5290345,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "662 debug pnpm:fetching-progress": {
+    "downloaded": 5306729,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "663 debug pnpm:fetching-progress": {
+    "downloaded": 5323113,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "664 debug pnpm:fetching-progress": {
+    "downloaded": 5339497,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "665 debug pnpm:fetching-progress": {
+    "downloaded": 5355881,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "666 debug pnpm:fetching-progress": {
+    "downloaded": 5372265,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "667 debug pnpm:fetching-progress": {
+    "downloaded": 5388649,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "668 debug pnpm:fetching-progress": {
+    "downloaded": 5405033,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "669 debug pnpm:fetching-progress": {
+    "downloaded": 5421417,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "670 debug pnpm:fetching-progress": {
+    "downloaded": 5437801,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "671 debug pnpm:fetching-progress": {
+    "downloaded": 5454185,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "672 debug pnpm:fetching-progress": {
+    "downloaded": 5470569,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "673 debug pnpm:fetching-progress": {
+    "downloaded": 5486953,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "674 debug pnpm:fetching-progress": {
+    "downloaded": 5503337,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "675 debug pnpm:fetching-progress": {
+    "downloaded": 5519721,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "676 debug pnpm:fetching-progress": {
+    "downloaded": 5536105,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "677 debug pnpm:fetching-progress": {
+    "downloaded": 5552489,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "678 debug pnpm:fetching-progress": {
+    "downloaded": 5568873,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "679 debug pnpm:fetching-progress": {
+    "downloaded": 5585257,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "680 debug pnpm:fetching-progress": {
+    "downloaded": 5601641,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "681 debug pnpm:fetching-progress": {
+    "downloaded": 5618025,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "682 debug pnpm:fetching-progress": {
+    "downloaded": 5634409,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "683 debug pnpm:fetching-progress": {
+    "downloaded": 5650793,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "684 debug pnpm:fetching-progress": {
+    "downloaded": 5667177,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "685 debug pnpm:fetching-progress": {
+    "downloaded": 5683561,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "686 debug pnpm:fetching-progress": {
+    "downloaded": 5699945,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "687 debug pnpm:fetching-progress": {
+    "downloaded": 5716329,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "688 debug pnpm:fetching-progress": {
+    "downloaded": 5732713,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "689 debug pnpm:fetching-progress": {
+    "downloaded": 5749097,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "690 debug pnpm:fetching-progress": {
+    "downloaded": 5765481,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "691 debug pnpm:fetching-progress": {
+    "downloaded": 5781865,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "692 debug pnpm:fetching-progress": {
+    "downloaded": 5798249,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "693 debug pnpm:fetching-progress": {
+    "downloaded": 5814633,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "694 debug pnpm:fetching-progress": {
+    "downloaded": 5831017,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "695 debug pnpm:fetching-progress": {
+    "downloaded": 5847401,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "696 debug pnpm:fetching-progress": {
+    "downloaded": 5863785,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "697 debug pnpm:fetching-progress": {
+    "downloaded": 5880169,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "698 debug pnpm:fetching-progress": {
+    "downloaded": 5896553,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "699 debug pnpm:fetching-progress": {
+    "downloaded": 5912937,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "700 debug pnpm:fetching-progress": {
+    "downloaded": 5929321,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "701 debug pnpm:fetching-progress": {
+    "downloaded": 5945705,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "702 debug pnpm:fetching-progress": {
+    "downloaded": 5962089,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "703 debug pnpm:fetching-progress": {
+    "downloaded": 5978473,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "704 debug pnpm:fetching-progress": {
+    "downloaded": 5994857,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "705 debug pnpm:fetching-progress": {
+    "downloaded": 6011241,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "706 debug pnpm:fetching-progress": {
+    "downloaded": 6027625,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "707 debug pnpm:fetching-progress": {
+    "downloaded": 6027878,
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "status": "in_progress"
+  },
+  "708 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/firebase/9.0.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "fetched"
+  },
+  "709 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/app/0.7.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/app",
+      "rawSpec": "0.7.0"
+    }
+  },
+  "710 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/app/0.7.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "711 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@firebase/app/0.7.0",
+    "size": 36141,
+    "status": "started"
+  },
+  "712 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/app/0.7.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "fetched"
+  },
+  "713 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/firestore/3.0.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/firestore",
+      "rawSpec": "3.0.0"
+    }
+  },
+  "714 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/firestore/3.0.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "715 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@firebase/firestore/3.0.0",
+    "size": 4363056,
+    "status": "started"
+  },
+  "716 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@firebase/util/1.3.0",
+    "wanted": {
+      "dependentId": "/firebase/9.0.0",
+      "name": "@firebase/util",
+      "rawSpec": "1.3.0"
+    }
+  },
+  "717 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/util/1.3.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "resolved"
+  },
+  "718 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@firebase/util/1.3.0",
+    "size": 130138,
+    "status": "started"
+  },
+  "719 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@firebase/util/1.3.0",
+    "requester": "D:\\Projects\\upwork\\specta\\core",
+    "status": "fetched"
+  },
+  "720 error pnpm": {
+    "code": "ERR_PNPM_BROKEN_METADATA_JSON",
+    "pkgsStack": [
+      {
+        "id": "registry.npmjs.org/firebase/9.0.0",
+        "name": "firebase",
+        "version": "9.0.0"
+      }
+    ],
+    "err": {
+      "name": "Error",
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@firebase%2Ffunctions (over 60000ms)",
+      "code": "ERR_PNPM_BROKEN_METADATA_JSON",
+      "stack": "Error: Response timeout while trying to fetch https://registry.npmjs.org/@firebase%2Ffunctions (over 60000ms)\n    at RetryOperation._fn (C:\\Users\\ryuman\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:84502:36)"
+    }
+  }
+}

@@ -1,0 +1,136 @@
+version: '3'
+
+networks:
+  frontend:
+    driver: ${NETWORKS_DRIVER}
+  backend:
+    driver: ${NETWORKS_DRIVER}
+
+volumes:
+  docker-in-docker:
+    driver: ${VOLUMES_DRIVER}
+
+services:
+
+  ### Workspace Utilities ##################################
+  workspace:
+    build:
+      context: ./workspace
+      args:
+        - IMAGE_NODE_VERSION=${NODE_VERSION}
+    volumes:
+      - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_CONTAINER}${APP_CODE_CONTAINER_FLAG}
+      - docker-in-docker:/certs/client
+      - ~/.ssh:/root/.ssh
+    extra_hosts:
+      - "dockerhost:${DOCKER_HOST_IP}"
+    ports:
+      - "${WORKSPACE_SSH_PORT}:22"
+
+    tty: true
+    environment:
+      - DOCKER_HOST=tcp://docker-in-docker:2376
+      - DOCKER_TLS_VERIFY=1
+      - DOCKER_TLS_CERTDIR=/certs
+      - DOCKER_CERT_PATH=/certs/client
+    networks:
+      - frontend
+      - backend
+    links:
+      - docker-in-docker
+
+  ### core-main ##############################################
+  core-main:
+    build:
+      context: ./projects/core-main
+      args:
+        - IMAGE_NODE_VERSION=${NODE_VERSION}
+    volumes:
+      - ${APP_CODE_PATH_CORE_MAIN}:${APP_CODE_PATH_CONTAINER}${APP_CODE_CONTAINER_FLAG}
+      - docker-in-docker:/certs/client
+      - ~/.ssh:/root/.ssh
+    expose:
+      - "9000"
+    tty: true
+    extra_hosts:
+      - "dockerhost:${DOCKER_HOST_IP}"
+    environment:
+      - DOCKER_HOST=tcp://docker-in-docker:2376
+      - DOCKER_TLS_VERIFY=1
+      - DOCKER_TLS_CERTDIR=/certs
+      - DOCKER_CERT_PATH=/certs/client
+    depends_on:
+      - workspace
+    networks:
+      - backend
+    links:
+      - docker-in-docker
+
+  ### sveltekit-main ##############################################
+  sveltekit-main:
+    build:
+      context: ./projects/sveltekit-main
+      args:
+        - IMAGE_NODE_VERSION=${NODE_VERSION}
+    volumes:
+      - ${APP_CODE_PATH_CORE_MAIN}:${APP_CODE_PATH_CONTAINER}${APP_CODE_CONTAINER_FLAG}
+      - docker-in-docker:/certs/client
+      - ~/.ssh:/root/.ssh
+    expose:
+      - "9001"
+    tty: true
+    extra_hosts:
+      - "dockerhost:${DOCKER_HOST_IP}"
+    environment:
+      - DOCKER_HOST=tcp://docker-in-docker:2376
+      - DOCKER_TLS_VERIFY=1
+      - DOCKER_TLS_CERTDIR=/certs
+      - DOCKER_CERT_PATH=/certs/client
+    depends_on:
+      - workspace
+    networks:
+      - backend
+    links:
+      - docker-in-docker
+
+  ### tauri-main ##############################################
+  tauri-main:
+    build:
+      context: ./projects/tauri-main
+      args:
+        - IMAGE_NODE_VERSION=${NODE_VERSION}
+    volumes:
+      - ${APP_CODE_PATH_TAURI_MAIN}:${APP_CODE_PATH_CONTAINER}${APP_CODE_CONTAINER_FLAG}
+      - docker-in-docker:/certs/client
+      - ~/.ssh:/root/.ssh
+    expose:
+      - "9002"
+    tty: true
+    extra_hosts:
+      - "dockerhost:${DOCKER_HOST_IP}"
+    environment:
+      - DOCKER_HOST=tcp://docker-in-docker:2376
+      - DOCKER_TLS_VERIFY=1
+      - DOCKER_TLS_CERTDIR=/certs
+      - DOCKER_CERT_PATH=/certs/client
+    depends_on:
+      - workspace
+    networks:
+      - backend
+    links:
+      - docker-in-docker
+
+  
+  ### Docker-in-Docker ################################################
+  docker-in-docker:
+    image: docker:19.03-dind
+    environment:
+      DOCKER_TLS_SAN: DNS:docker-in-docker
+    privileged: true
+    volumes:
+      - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_CONTAINER}
+      - docker-in-docker:/certs/client
+    expose:
+      - 2375
+    networks:
+      - backend

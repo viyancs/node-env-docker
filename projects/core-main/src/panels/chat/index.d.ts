@@ -1,0 +1,1 @@
+export {default as PanelChat} from './PanelChat.svelte'

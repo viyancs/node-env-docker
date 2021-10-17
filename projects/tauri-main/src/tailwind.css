@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+	display: inline;
+	max-width: unset;
+}
+button {
+	padding: 1px 6px;
+}
+
+.modal.show {
+	z-index: 99999;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}

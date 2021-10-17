@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/images/specta-icon.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="/css/spinner.css">
+		<link rel="stylesheet" href="https://use.typekit.net/brt6zzh.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			.draggable {
+			-webkit-app-region: drag;
+			}
+
+			.not-draggable {
+				-webkit-app-region: no-drag;
+			}
+		</style>
+		%svelte.head%
+	</head>
+	<body>
+		<!--
+			the spinner must exist outside of svelte,
+			because svelte itself will take time to be downloaded and ran
+			this element will then be referenced by the web app and feed it
+			to the package in order to remove it upon login verification
+		-->
+
+		<div class="u-spinner-area-global draggable">
+			<div class="u-spinner-global"></div>
+			<div class="u-loading-global">Specta is loading</div>
+		</div>
+		<div id="svelte">%svelte.body%</div>
+
+
+	</body>
+</html>

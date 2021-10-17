@@ -1,0 +1,73 @@
+.u-spinner-global {
+	width: 60px;
+	height: 60px;
+	background-color: #7C3AED;
+
+	margin: 100px auto;
+	-webkit-animation: u-sk-rotateplane-global 1s infinite ease-in-out;
+	animation: u-sk-rotateplane-global 1s infinite ease-in-out;
+}
+.u-spinner-area-global {
+	width: 100vw;
+	height: 100vh;
+	z-index: 10000;
+	position: absolute;
+	background-color: white;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@-webkit-keyframes u-sk-rotateplane-global {
+	0% {
+		-webkit-transform: perspective(120px);
+	}
+	50% {
+		-webkit-transform: perspective(120px) rotateY(180deg);
+	}
+	100% {
+		-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+	}
+}
+
+@keyframes u-sk-rotateplane-global {
+	0% {
+		transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+		-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+	}
+	50% {
+		transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+		-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+	}
+	100% {
+		transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+		-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+	}
+}
+.u-loading-global {
+    width: 160px;
+    left: 20px;
+    position: relative;
+}
+.u-loading-global:after {
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: bottom;
+	-webkit-animation: u-ellipsis-global steps(4, end) 1300ms infinite;
+	animation: u-ellipsis-global steps(4, end) 1300ms infinite;
+	content: '\2026'; /* ascii code for the ellipsis character */
+	width: 0px;
+}
+
+@keyframes u-ellipsis-global {
+	to {
+		width: 20px;
+	}
+}
+
+@-webkit-keyframes u-ellipsis-global {
+	to {
+		width: 20px;
+	}
+}

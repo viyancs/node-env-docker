@@ -1,0 +1,71 @@
+{
+  "name": "@specta-app/core",
+  "version": "0.0.2",
+  "type": "module",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "svelte": "./src/index.js",
+  "files": ["src", "dist"],
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./src/index.js"
+    },
+    "./auth": {
+      "import": "./src/auth/index.js",
+      "require": "./src/auth/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "./src/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "link-lib": "pnpm link --global",
+    "unlink-lib": "pnpm unlink",
+    "emulators:start": "firebase emulators:start --import=./test_data --export-on-exit=./test_data",
+    "test": "jest src --config jest.config.json",
+    "test:watch": "npm run test -- --watch"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "@firebase/rules-unit-testing": "^2.0.0",
+    "@fullcalendar/core": "^5.9.0",
+    "@fullcalendar/daygrid": "^5.9.0",
+    "@fullcalendar/icalendar": "^5.9.0",
+    "@fullcalendar/list": "^5.9.0",
+    "@fullcalendar/timegrid": "^5.9.0",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.23",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/svelte": "^3.0.3",
+    "babel-jest": "27.2.0",
+    "date-fns": "^2.23.0",
+    "dotenv": "^10.0.0",
+    "firebase": "^9.0.2",
+    "jest": "27.2.0",
+    "jest-environment-jsdom": "^27.2.0",
+    "jest-environment-node": "^27.2.0",
+    "prettier-plugin-svelte": "^2.4.0",
+    "sass": "^1.39.2",
+    "svelte": "^3.42.5",
+    "svelte-jester": "1.8.2",
+    "svelte-preprocess": "^4.9.4",
+    "sveltestrap": "^5.6.3",
+    "uuid": "^8.3.2",
+    "vite": "^2.5.7"
+  },
+  "dependencies": {
+    "ical": "^0.8.0",
+    "ical.js": "^1.4.0",
+    "flatpickr": "^4.6.9",
+    "sherlockjs": "^1.4.2",
+    "svelte-flatpickr": "^3.2.3",
+    "svelte-grid": "^5.0.1",
+    "svelte-loading-spinners": "^0.1.7",
+    "svelte-sortable-list": "^1.1.0"
+  }
+}
